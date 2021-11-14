@@ -12,8 +12,8 @@ First time setup using a local database:
 - Get [ngrok auth token](https://dashboard.ngrok.com/signup) and run `./ngrok authtoken <your_auth_token>`
 - Edit these files before running any Docker commands:
 	- Dockerfile: Ensure line 1 has necessary version of Wordpress eg: FROM wordpress:5.8.2
-	- .env: Change line 1: PROJECTNAME=wordpress-{PROJECTNAME}
-	  eg: PROJECTNAME=wordpress-village-builders
+	- .env: Change line 1: PROJECTNAME={PROJECTNAME}
+	  eg: PROJECTNAME=village-builders
 	- public/wp-config-localonly.php: Change line 49: 
 	  eg: define( 'DB_NAME', 'wordpress-{PROJECTNAME}');
 - Run `docker-compose -f docker-compose-setup-onetime.yml up`
