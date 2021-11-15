@@ -22,10 +22,11 @@ First time setup using a local database:
 
 Subsequent runs:
 - After runnning the above docker-compose command for the first time, every time thereafter:
-	- Run (local to the working Docker container directory): `.\start-local.sh`
+	- Run (local to the working Docker container directory): `./start-local.sh`
 - Wait for containers to initialise then:
-	- Open WP site by browsing to a url listed in the output of 'start-local.sh' e.g.'https://864cc00c247d.ngrok.io' 
-	- For phpmyadmin use http://localhost:8080 
+	- Open WP site by browsing to a url listed in the output of 'start-local.sh' e.g.'https://d59a-208-110-108-43.ngrok.io' 
+	- For phpmyadmin use http://localhost:8080
+- Change the default browser opened by the start up process by modifying line 39 of start-local.sh (currently it points to the default path for Safari on a Mac) 
 
 Database and files:
 NOTE: The staging environment is the single source of truth. Developing locally should only be for styling and general content configuration that can be easily ported to the staging server.

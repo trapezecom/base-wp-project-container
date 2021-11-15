@@ -35,8 +35,8 @@ edit_wp_config "WP_HOME"
 
 echo -e "${Red}Open ${Yellow}${HTTPSURL}/${Red} for wordpress and http://localhost:8080 for phpmyadmin${NC}"
 
-# Change Brave Browser with your preffered browser
-open -a "/Applications/Chrome.app" ${HTTPSURL}/wp-admin
+# Change to  FireFox, Brave Browser, Google Chrome or your prefered browser
+open -a "/Applications/Safari.app" ${HTTPSURL}/wp-admin
 
 echo -e "${Green}Starting local Wordpress environment. Refresh the browser once environment starts.${NC}"
 docker-compose up
